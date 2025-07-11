@@ -1,0 +1,52 @@
+{
+  "users": [
+    {
+      "id": "tyrunvmskjdiwe",
+      "username": "arpita rawat",
+      "email": "arpita@gmail.com",
+      "password": "12345",
+      "isAdmin": true
+    },
+    {
+      "id": "n4LI99f5T70UEWTJWY7Jh",
+      "username": "abhi rawat",
+      "email": "abhi@gamil.com",
+      "password": "232323",
+      "isAdmin": false
+    },
+    {
+      "id": "kOgAhzKCrCNA8xI09DYIG",
+      "username": "annu rawat",
+      "email": "annu@gmail.com",
+      "password": "212121",
+      "isAdmin": false
+    }
+  ],
+  "products": [
+    {
+      "id": "Rnqk2WttGAIQ1fKhMYrnS",
+      "image": "https://imgs.search.brave.com/omNVKL8LaStIAZGMOW4CeqnduckqMWd6yKXwKVxPqjA/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL0kv/MzFDVFFGQjRLQ1Mu/anBn",
+      "title": "Gold Bangle",
+      "price": "30000",
+      "category": "jwellery",
+      "description": "A user on the r/d100 subreddit created a jewelry generator that provides a random description, worth, and history for a piece of jewelry, which can be useful for role-playing games"
+    },
+    {
+      "id": "-0dayLkugaDDUj4eaG5lZ",
+      "image": "https://imgs.search.brave.com/yoAouYs74fkzjxyXk_S3FbqNl-gLn7CyENXpIifp-4o/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzL2Y4L2M5/LzE1L2Y4YzkxNWRh/YTYxNjE3ZjcxZWU5/YmU4NWM3MDgyYTFj/LmpwZw",
+      "title": "Girl's trendy outfit's",
+      "price": "2000",
+      "category": "women's clothes",
+      "description": "Based on the current trends, some of the most popular and trendy clothing items for girls include low-waisted jeans, crop tops, and baggy t-shirts"
+    },
+    {
+      "id": "JILDGbDx9sn4R8jIdkfMh",
+      "image": "https://imgs.search.brave.com/3PAS2W_6_crQcB54PH88zR8_WWx20Utp-Emk0Ii9kX4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YTIubmV3bG9va2Fz/c2V0cy5jb20vaS9u/ZXdsb29rLzkzMzgy/MzkxMi5qcGc_c3Ry/aXA9dHJ1ZSZxbHQ9/NTA",
+      "title": "party wear",
+      "price": "1200",
+      "category": "women's clothes",
+      "description": "For those looking for trendy clothes, stores like H&M, Zara, Abercrombie, Hollister, and Lululemon are popular among girls"
+    }
+  ],
+  "carts": []
+}
