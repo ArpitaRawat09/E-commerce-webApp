@@ -10,7 +10,7 @@ const Nav = () => {
 
   const logoutHandler = () => {
     dispatch(asyncLogoutUser());
-    navigate("/");
+    navigate("/login");
   };
 
   return (
@@ -19,9 +19,13 @@ const Nav = () => {
         {/* Left Section */}
         <div className="flex gap-8 font-thin">
           <NavLink to="/">Home</NavLink>
-          <NavLink to="/products">Products</NavLink>
           {user && user.email ? (
-            <NavLink to="/admin/create-product">Create Product</NavLink>
+            <>
+              {user && user?.isAdmin && (
+                <NavLink to="/admin/create-product">Create Product</NavLink>
+              )}
+              <NavLink to="/admin/user-profile">Settings</NavLink>
+            </>
           ) : (
             <NavLink to="/cart">Cart</NavLink>
           )}

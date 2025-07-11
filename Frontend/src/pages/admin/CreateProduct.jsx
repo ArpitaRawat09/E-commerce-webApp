@@ -20,7 +20,7 @@ const CreateProduct = () => {
   return (
     <div className="min-h-screen w-full flex items-center justify-center  relative overflow-hidden">
       <div className="absolute inset-0 flex items-center justify-center  ">
-        <div className="p-10 rounded-xl shadow-lg w-full max-w-5xl text-white border backdrop-blur-md">
+        <div className="p-10 rounded-xl  w-full max-w-5xl text-white border ">
           <h2 className="text-3xl font-semibold mb-8 text-center">Create Product</h2>
 
           <form

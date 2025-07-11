@@ -18,8 +18,7 @@ export const asyncLogoutUser = (user) => async (dispatch, getState) => {
     localStorage.removeItem("user")
     dispatch(removeuser())
     toast.success("User logged Out!");
-    console.log("logout user");
-
+    // console.log("logout user");
   } catch (error) {
     toast.error("Logout error!")
   }
@@ -41,7 +40,6 @@ export const asyncLoginUser = (user) => async (dispatch, getState) => {
 }
 
 
-
 export const asyncRegisterUser = (user) => async (dispatch, getState) => {
   try {
     const res = await axios.post("/users", user);
@@ -51,4 +49,25 @@ export const asyncRegisterUser = (user) => async (dispatch, getState) => {
     toast.error("Register error!")
   }
 }
+
+export const asyncUpdateUser = (id, user) => async (dispatch, getState) => {
+  try {
+    const { data } = await axios.patch("/users/" + id, user);
+    // console.log(data);
+    localStorage.setItem("user", JSON.stringify(data))
+    dispatch(asyncCurrentUser())
+  } catch (error) {
+    toast.error("Register error!")
+  }
+}
+
+export const asyncDeleteUser = (id) => async (dispatch, getState) => {
+  try {
+    await axios.delete("/users/" + id)
+    dispatch(asyncLogoutUser())
+  } catch (error) {
+    toast.error("User delete error")
+  }
+}
+
 

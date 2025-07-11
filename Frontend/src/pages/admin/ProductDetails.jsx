@@ -34,10 +34,10 @@ const ProductDetails = () => {
   }
   return product ? (
     <>
-      <div className="container w-full  flex border  border-white p-10 rounded-md mt-5">
+      <div className="container w-full flex border border-white px-10 py-10 pb-0 rounded-md mt-5">
         {product?.image && (
           <div className="w-1/2 ">
-            <img className=" w-[70%] h-[70%] object-cover object-top rounded-md" src={product?.image} alt="" />
+            <img className=" w-[70%] h-[90%] object-cover object-top rounded-md" src={product?.image} alt="" />
           </div>
         )}
         <div className="w-1/2 h-1/2">
@@ -114,7 +114,7 @@ const ProductDetails = () => {
               <button
                 onClick={deleteHandler}
                 type="button"
-                className="w-full  py-2 bg-[#ff6060] hover:bg-[#c01e1ee8] rounded-lg font-semibold"
+                className="w-full py-2 bg-[#ff6060] hover:bg-[#c01e1ee8] rounded-lg font-semibold"
               >
                 Delete Product
               </button>

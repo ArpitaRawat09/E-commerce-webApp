@@ -27,8 +27,6 @@ const Login = () => {
     }
   }
 
-
-
   return (
     <div className="min-h-130 w-full flex items-center justify-center relative overflow-auto">
       {/* Stars or particles could be added here for animation */}
